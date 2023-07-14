@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Password</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Fredoka:wght@600&family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet">
+
+	<script type="text/javascript">
+
+		function checkpassword() {
+			var password = document.getElementById("passwordbox")
+			var passwordText = password.value;
+			if (passwordText == "PETS:)") {
+				return true;
+			}
+			else{
+				alert("Access Denied 😁")
+				return false;
+			}
+		}
+
+
+	</script>
+
+	<style type="text/css">
+		h1{
+			font-size: 50px; 
+			font-family: 'Fredoka', sans-serif;
+			text-align: center;
+		}
+		p{
+			font-family: 'Fuzzy Bubbles', cursive;
+			text-align: center;
+		}
+		a{
+			text-align: center;
+			font-family: 'Fredoka', sans-serif;
+			background-color: #7648a3;
+			font-size: 20px;
+			border: none;
+			padding: 7px 15px;
+			color: white;
+			border-radius: 10px;
+			text-decoration: none;
+
+		}
+		a:hover{
+			background-color: #886aa6;
+		}
+		section.box{
+			text-align: center;
+			margin: 200px;
+			color: white;
+
+		}
+		body{
+			background: url("https://assets-global.website-files.com/614716f50b4f49202fdd0087/616949393cf90643c1403605_6423.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		input{
+			border-radius: 10px;
+			padding: 5px;
+			border: none;
+		}
+
+
+	</style>
+</head>
+<body>
+
+<section class = "welcome box">
+	<h1 > Welcome!</h1>
+	<p > Please enter the passsword to view the following website. </p>
+	<p > Password: <input id="passwordbox" type="password"></p>
+	<a href="NehaPage1.html" onclick = "return checkpassword();"> Enter </a>
+</section>
+
+</body>
+</html>
